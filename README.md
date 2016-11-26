@@ -12,7 +12,7 @@ const preferences = parsePreferHeader('respond-async, wait=300');
 
 ## Installation
 
-```
+```sh
 $ npm install parse-prefer-header
 ```
 
@@ -20,7 +20,7 @@ $ npm install parse-prefer-header
 
 - Parses the HTTP `Prefer` header into a friendly JavaScript object
 - Normalizes tokens into JavaScript properties (e.g. `respondAsync`)
-- Handles quoting correctly (e.g. `foo=";= ,;="` becomes `{ foo: ';= ,;='}`)
+- Handles quoting correctly (e.g. `foo=";= ,;="` becomes `{ foo: ';= ,;=' }`)
 - Supports token parameters
 
 ## API

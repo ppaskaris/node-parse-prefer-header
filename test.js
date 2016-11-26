@@ -86,6 +86,10 @@ describe('rfc7240', () => {
     });
   });
 
+  it('handle what I claimed in the README', () => {
+    expect(parse('foo=";= ,;="')).to.deep.equal({ foo: ';= ,;=' });
+  });
+
 });
 
 describe('parsed structure', () => {
